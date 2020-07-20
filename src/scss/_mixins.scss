@@ -1,0 +1,22 @@
+@mixin breakpoint($point) {
+  @if $point == desktop {
+    @media (min-width: 1366px) { @content; }
+  }
+  @else if $point == tabletLarge {
+    @media (min-width: 1024px) { @content; }
+  }
+  @else if $point == tablet {
+    @media (max-width: 1024px) { @content; }
+  }
+  @else if $point == mobile {
+    @media (min-width: 768px)  { @content; }
+  }
+}
+
+// Font size  px to rem
+$base-size: 16;
+
+@function size($target, $context: $base-size) {
+	@return ($target / $context) * 1rem;
+}
+

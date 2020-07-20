@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+body {
+  font-family: "Lato", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+$light: 300;
+$regular: 400;
+$bold: 700;
+
+// @headings
+
+.h1 {
+  font-size: size(30);
+  line-height: 30px;
+  font-weight: $regular;
+  @include breakpoint(tabletLarge) {
+    font-size: size(60);
+    line-height: 60px;
+  }
+}
+
+.h2 {
+  font-size: size(32);
+  line-height: 35px;
+  font-weight: $regular;
+  @include breakpoint(tabletLarge) {
+    font-size: size(45);
+    line-height: 48px;
+  }
+}
+
+.h2-lg {
+  font-size: size(32);
+  line-height: 35px;
+  font-weight: $light;
+  @include breakpoint(tabletLarge) {
+    font-size: size(38);
+    line-height: 41px;
+  }
+}
+
+.h3 {
+  font-size: size(30);
+  line-height: 38px;
+  font-weight: $light;
+  text-align: center;
+
+  @include breakpoint(tabletLarge) {
+    font-size: size(40);
+    line-height: 48px;
+    text-align: left;
+  }
+}
+
+.h4 {
+  font-size: size(27);
+  line-height: 24px;
+  font-weight: $bold;
+}
+
+.h5 {
+  font-size: size(26);
+  letter-spacing: 0px;
+  line-height: 35px;
+  font-weight: $light;
+}
+
+// @paragraphs
+
+.p-lg {
+  font-size: size(16);
+  line-height: 19px;
+  font-weight: $light;
+  @include breakpoint(tabletLarge) {
+    font-size: size(21);
+    line-height: 24px;
+  }
+}
+
+.p-md {
+  font-size: size(14);
+  line-height: 18px;
+  font-weight: $bold;
+  @include breakpoint(tabletLarge) {
+    font-size: size(20);
+    line-height: 24px;
+  }
+}
+
+.p {
+  font-size: size(18);
+  line-height: 24px;
+  font-weight: $light;
+}
+
+.p-sm {
+  font-size: size(15);
+  line-height: 18px;
+  font-weight: $light;
+  @include breakpoint(tabletLarge) {
+    font-size: size(16);
+    line-height: 19px;
+  }
+}
+
+.p-xm {
+  font-size: size(15);
+  letter-spacing: 0px;
+  line-height: 23px;
+  font-weight: $light;
+}
+
+.p-xxm {
+  font-size: size(11);
+  line-height: 15px;
+  font-weight: $bold;
+  @include breakpoint(tabletLarge) {
+    font-size: size(12);
+  }
+}
+
+// @link
+
+.link {
+  font-size: size(16);
+  line-height: 19px;
+  font-weight: $light;
+}
+
+.link-sm {
+  font-size: size(11);
+  line-height: 21px;
+  font-weight: $light;
+  @include breakpoint(tabletLarge) {
+    font-size: size(14);
+    line-height: 24px;
+  }
+}
+
+
+

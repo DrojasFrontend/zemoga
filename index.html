@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="dist/css/bundle.css" />
+
+  </head>
+  <body id="body">
+
+    <header id="header" class="header">
+     <div class="header__wrapper">
+      <div class="header__logo">
+        <a href="">
+         Rule of Thumb.
+        </a>
+        <button id="openMenuMobile" class="toggle-bar" role="button" aria-label="Button open menu" ></button>
+      </div>
+      <nav id="menuItem">
+        <ul class="header__menu">
+          <li id="header__menu-item" class="header__menu-item" role="menuitem" aria-label="Past Trials">
+            <button role="button" aria-label="Open submenu" class="link">Past Trials</button>
+            <ul class="header__menu-submenu">
+              <li><a href="" class="p-sm">Politics</a></li>
+              <li><a href="" class="p-sm">Business</a></li>
+              <li><a href="" class="p-sm">Sports</a></li>
+              <li><a href="" class="p-sm">Culture</a></li>
+            </ul>
+          </li>
+          <li class="header__menu-item" role="menuitem" aria-label="How It Works">
+            <button class="link" role="button" aria-label="Open submenu">How It Works</button>
+            <ul class="header__menu-submenu">
+              <li><a href="#" class="p-sm">Politics</a></li>
+              <li><a href="#" class="p-sm">Business</a></li>
+              <li><a href="#" class="p-sm">Sports</a></li>
+              <li><a href="#" class="p-sm">Culture</a></li>
+            </ul>
+          </li>
+          <li class="header__menu-item" role="menuitem" aria-label="Account">
+            <button role="button" aria-label="Log In" class="link">Log In</button>
+            /
+            <button role="button" aria-label="sing Up" class="link">Sign Up</button>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__search">
+        <button id="searchButton" role="button" aria-label="Search">
+          <img src="./src/images/icon-search.svg" alt="Icon Search">
+        </button>
+      </div>
+     </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="shadow"></div>
+          <div class="container">
+            <div class="hero__copy">
+              <div class="hero__copy-wrapper">
+                <p class="p-sm">What’s your opinion on</p>
+                <h1 class="h1">
+                  Pope Francis?
+                </h1>
+                <p class="p-lg">
+                  He’s talking tough on clergy sexual abuse, but is he just another papal pervert protector? (thumbs down) or a true pedophile punishing pontiff? (thumbs up) 
+                </p>
+                <div class="hero__copy-link">
+                  <img src="./src/images/icon-wiki.svg" alt="Icon Wiki">
+                  <a href="#" class="link-sm">
+                    More information
+                  </a>
+                </div>
+                <p class="p-md">
+                  What’s Your Verdict?
+                </p>
+              </div>
+              <div class="vote">
+                <button class="bckg-seconday-opacity" role="button" aria-label="Button Good">
+                  <img src="./src/images/icon-hand.svg" alt="Icon Hand">
+                </button>
+                <button class="bckg-primary-opacity" role="button" aria-label="Button Good">
+                  <img src="./src/images/icon-hand.svg" alt="Icon Hand">
+                </button>
+              </div>
+            </div>
+            
+          </div>
+          <div class="closing">
+            <div class="closing-in" style="width: 25%">
+              <p>closing ing</p>
+            </div>
+            <div class="closing-day" style="width: 75%">
+              <p>
+                22 days
+              </p>
+            </div>
+          </div>
+      </section>
+
+      <section id="menssageBox" class="message-box is-visible">
+        <div class="container">
+          <div class="message-box__copy">
+            <div class="message-box__text">
+              <p>Speak out. Be heard. </p>
+              <h2 class="h2-lg">
+                Be counted
+              </h2>
+            </div>
+            <div class="message-box__description">
+              <p class="p-xm">
+                Rule of Thumb is a crowd sourced court of public opinion where anyone and everyone can speak out and speak freely. It’s easy: You share your opinion, we analyze and put the data in a public report.
+              </p>
+            </div>
+            <button id="closeMessage" class="message-box__close" role="button" aria-label="Close Message" >
+              <img src="./src/images/icon-close-white.svg" alt="Icon Close Message">
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="previous">
+        <div class="container">
+          <h2 class="h2-lg">
+            Previous Rulings
+          </h2>
+          <div id="spinner" class="spinner">
+            <img src="./src/images/spiner.gif" alt="Loader">
+          </div>
+          <div id="previewList" class="row">
+          </div>
+        </div>
+      </section>
+
+      <div id="products">
+        <div id="spinner"></div>
+      </div>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <nav class="footer__menu">
+                <ul>
+                  <li><a href="#" class="p-xxm">Terms and Conditions</a></li>
+                  <li><a href="#" class="p-xxm">Privacy Policy </a></li>
+                  <li><a href="#" class="p-xxm">Contact Us</a> </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="col-6">
+              <div class="footer__follow">
+                <p class="p-xxm">Folow Us</p>
+                <a href=""><img src="./src/images/icon-facebook.svg" alt="Icon Facebook"></a>
+                <a href=""><img src="./src/images/icon-twitter.svg" alt="Icon Twitter"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+
+      <div id="searchForm" class="search">
+        <button id="closeSearchButton" class="search__button-close" role="button" aria-label="Close Form Search">
+          <p class="p-sm">Close</p> 
+          <i>
+            <img src="./src/images/icon-close-search.svg" alt="Icon Close Search">
+          </i>
+        </button>
+        <h3 class="h3">Search past trials</h3>
+        <form action="">
+          <div>
+            <input type="text" name="search" placeholder="Search">
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.min.js"></script>
+    <script src="dist/js/bundle.js"></script>
+  </body>
+</html>
